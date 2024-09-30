@@ -1,7 +1,6 @@
 import requests
 from flask import Flask
 import constants as const
-import Data_handler.data_handler as data
 from Rest.rest import api 
 
 app = Flask(__name__, static_folder='static')

@@ -1,5 +1,6 @@
-# Path to the JSON data file
-DATA_FILE_PATH = 'data.json'
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current file
+DATA_FILE_PATH = os.path.join(BASE_DIR, 'data_handler', 'data.json')  # Path to the data.json file
 
 # Flask server configuration
 FLASK_HOST = '127.0.0.1'

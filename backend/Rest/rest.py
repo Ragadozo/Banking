@@ -36,7 +36,7 @@ def update_item():
                 item['status'] = "PAID"
             else:
                 item['status'] = "PARTIALLY_PAID"
-            write_data_to_file(jsonify(item))  # Write the updated data to the file
-            return True, 200  # Return the updated item
+            write_data_to_file(data_storage)  # Write the updated data to the file
+            return jsonify({"message": "Item updated successfully", "success": True}), 200  # Return success message
 
     return jsonify({"error": "Item not found"}), 404

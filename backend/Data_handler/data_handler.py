@@ -1,11 +1,9 @@
 import constants as const
 import json
-import os
 
 def read_data ():
-    json_path = os.path.join(os.path.dirname(__file__), const.DATA_FILE_PATH)
     try:
-        with open(json_path, 'r') as json_file:
+        with open(const.DATA_FILE_PATH, 'r') as json_file:
             data = json.load(json_file)
         return data
     except FileNotFoundError:
