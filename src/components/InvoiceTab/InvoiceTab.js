@@ -23,15 +23,15 @@ const InvoiceTab = ({ invoices }) => {
       },
       body: JSON.stringify(updatedTransaction),
     })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
+      .catch((error) => {
+        console.error('Error:', error);
+      });
   };
 
-    return (
-      <div className="tab-container">
-        {invoices.map((invoice, index) => (
-          <div className={`box ${invoice.status}`} key={index} onClick={() => handleItemClick(invoice)}>
+  return (
+    <div className="tab-container">
+      {invoices.map((invoice, index) => (
+        <div className={`box ${invoice.status}`} key={index} onClick={() => handleItemClick(invoice)}>
           <h3>Reference: {invoice.reference}</h3>
           <p>Amount: {invoice.amount}</p>
           <p>Paid Amount: {invoice.paid_amount}</p>
@@ -39,16 +39,16 @@ const InvoiceTab = ({ invoices }) => {
           <p>Created At: {new Date(invoice.created_at).toLocaleString()}</p>
           <p>Due Date: {new Date(invoice.due_date).toLocaleString()}</p>
         </div>
-        ))}
-        {selectedItem && (
-          <TransactionHolder 
-            transaction={selectedItem} 
-            onClose={handleModalClose} 
-            onSave={handleSave} 
-          />
-        )}
-      </div>
-    );
-  };
+      ))}
+      {selectedItem && (
+        <TransactionHolder
+          transaction={selectedItem}
+          onClose={handleModalClose}
+          onSave={handleSave}
+        />
+      )}
+    </div>
+  );
+};
 
 export default InvoiceTab;

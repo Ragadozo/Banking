@@ -1,37 +1,42 @@
 /* src/TabComponent.css */
 .tab-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content:center
-  }
-  
-  .box {
-    border: 1px solid #ccc;
-    padding: 16px;
-    border-radius: 8px;
-    background-color:#a4b0beaa;
-    width: 300px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .PAID {
-    background-color:#28b779b5 /* Light green for paid */
-  }
-  .box:hover {
-    transform: scale(1.05); /* Slightly enlarges the box on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
-    background-color: #a4b0be;
-  }
-  
-  .PAID:hover {
-    background-color:#28b779e7 /* Light green for paid */
-  }
-  
-  h3 {
-    margin-bottom: 8px;
-  }
-  
-  p {
-    margin: 4px 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #a4b0beaa;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.PAID {
+  background-color: #28b779b5
+    /* Light green for paid */
+}
+
+.box:hover {
+  transform: scale(1.05);
+  /* Slightly enlarges the box on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Adds a deeper shadow */
+  background-color: #a4b0be;
+}
+
+.PAID:hover {
+  background-color: #28b779e7
+    /* Light green for paid */
+}
+
+h3 {
+  margin-bottom: 8px;
+}
+
+p {
+  margin: 4px 0;
+}

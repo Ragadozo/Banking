@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <h1>User Invoices</h1>
-      {invoices && invoices.length > 0  ? (
+      {invoices && invoices.length > 0 ? (
         <InvoiceTab invoices={invoices} />
       ) : (
         <p>No invoices found.</p>

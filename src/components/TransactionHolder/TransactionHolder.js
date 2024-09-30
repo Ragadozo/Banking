@@ -22,17 +22,13 @@ const TransactionHolder = ({ transaction, onClose, onSave }) => {
     onSave(updatedTransaction);  // Call the onSave function with the updated data
   };
 
-  const close = (e) => {
-    e.preventDefault()
-  };
-
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h2>Pay transaction</h2>
         <div>Reference: {transaction.reference}</div>
         <div>Amount: {transaction.amount}</div>
-        {transaction.status != "PAID" ?
+        {transaction.status !== "PAID" ?
           <form onSubmit={handleSubmit}>
             <label>Enter Amount Paid (Max: {maxEditableValue}):</label>
             <div>
@@ -53,8 +49,8 @@ const TransactionHolder = ({ transaction, onClose, onSave }) => {
           </form>
           :
           <div>
-          <div>{transaction.status}</div>
-          <button type="button" onClick={onClose}>Cancel</button>
+            <div>{transaction.status}</div>
+            <button type="button" onClick={onClose}>Cancel</button>
           </div>
         }
       </div>
