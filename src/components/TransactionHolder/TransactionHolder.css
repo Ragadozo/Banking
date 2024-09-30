@@ -1,0 +1,57 @@
+/* src/EditModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #a4b0be;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.modal-content h2 {
+  margin: 0 0 10px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  margin-bottom: 10px;
+}
+
+.modal-content input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-buttons {
+  border-radius: 12px;
+  border-color: grey;
+  padding: 6px;
+  background-color: lightblue;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.submit-buttons:hover {
+  background-color: lightcyan;
+}
+
+.modal-content button {
+  margin-top: 15px;
+}

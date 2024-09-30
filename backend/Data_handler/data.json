@@ -1,0 +1,76 @@
+[
+{
+"reference": "NTY0592321",
+"amount": 1987,
+"paid_amount": 0,
+"status": "NOT_PAID",
+"created_at": "2024-09-02T12:00:00Z",
+"due_date": "2024-10-02T12:00:00Z"
+},
+{
+"reference": "NTY0592322",
+"amount": 349192,
+"paid_amount": 349192,
+"status": "PAID",
+"created_at": "2024-06-12T12:00:00Z",
+"due_date": "2024-07-12T12:00:00Z"
+},
+{
+"reference": "NTY0592323",
+
+"amount": 42313,
+"paid_amount": 20000,
+"status": "PARTIALLY_PAID",
+"created_at": "2024-06-12T12:00:00Z",
+"due_date": "2024-07-12T12:00:00Z"
+},
+{
+"amount": 15000,
+"paid_amount": 0,
+"status": "NOT_PAID",
+"due_date": "2024-08-01T12:00:00Z",
+"created_at": "2024-06-01T12:00:00Z",
+"reference": "NTY0592326"
+},
+{
+"amount": 87000,
+"paid_amount": 87000,
+"status": "PAID",
+"due_date": "2023-09-10T12:00:00Z",
+"created_at": "2023-06-12T12:00:00Z",
+"reference": "NTY0592327"
+},
+{
+"amount": 65432,
+"paid_amount": 32000,
+"status": "PARTIALLY_PAID",
+"due_date": "2024-07-11T12:00:00Z",
+"created_at": "2024-04-13T12:00:00Z",
+"reference": "NTY0592328"
+},
+{
+"amount": 45000,
+"paid_amount": 0,
+"status": "NOT_PAID",
+"due_date": "2024-10-01T12:00:00Z",
+"created_at": "2024-07-03T12:00:00Z",
+"reference": "NTY0592329"
+},
+{
+"amount": 92000,
+
+"paid_amount": 92000,
+"status": "PAID",
+"due_date": "2023-11-10T12:00:00Z",
+"created_at": "2023-08-12T12:00:00Z",
+"reference": "NTY0592330"
+},
+{
+"amount": 58000,
+"paid_amount": 40000,
+"status": "PARTIALLY_PAID",
+"due_date": "2024-12-12T12:00:00Z",
+"created_at": "2024-09-12T12:00:00Z",
+"reference": "NTY0592331"
+}
+]
